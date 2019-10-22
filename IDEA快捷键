@@ -1,0 +1,75 @@
+*	ctrl + / 				单行注释//
+	ctrl + shift + / 		多行注释/*
+
+*	Ctrl + H 				显示当前类的层次结构
+*	ctrl + n 				显示类名查找框
+**	alt + 7 				查看类的所有方法
+*	shift + shift 			搜索类
+
+*	Ctrl + O 				选择可重写的方法
+*	Ctrl + I 				选择可继承的方法
+
+
+	ctrl + shift + r		搜索指定范围文件
+*	alt + up/down			向上/向下定位
+
+	ctrl + f 				在当前文件中查找
+*	ctrl + r				在当前文件中替换
+*	ctrl + y				删除光标所在行
+	ctrl + x				剪切光标所在行
+
+*	ctrl + d 				复制光标所在行，并把复制内容放到光标下一行位置
+**	ctrl + w				递进式选中代码块
+
+*	ctrl + g 				在当前文件跳转到指定行
+*	ctrl + j				插入自定义动态代码模板
+
+*	ctrl + p				方法参数提示显示
+*	ctrl + u 				前往光标所在类的父类
+*	Ctrl + B 				进入光标所在的方法/变量的接口或是定义处，等效于 Ctrl + 左键单击 （必备）
+
+*	Ctrl + K 				版本控制提交项目，需要此项目有加入到版本控制才可用
+	Ctrl + T 				版本控制更新项目，需要此项目有加入到版本控制才可用
+
+	Ctrl + + 				展开代码
+	Ctrl + - 				折叠代码
+
+*	Ctrl + F1 				在光标所在的错误代码处显示错误信息 （必备）
+*	Ctrl + F3 				调转到所选中的词的下一个引用位置 （必备）
+	Ctrl + F4 				关闭当前编辑文件
+
+*	Ctrl + F8 				在 Debug 模式下，设置光标当前行为断点，如果当前已经是断点则去掉断点
+	Ctrl + F9 				执行 Make Project 操作
+
+*	alt + enter 			抛出异常
+	ctrl + alt + t          选择怎么处理异常
+
+*	ctrl + alt + l			格式化代码
+	shift + alt + 箭头      上下行交换位置
+	alt + shift + u 		将选中的代码按驼峰命名  需安装插件
+
+*	alt + insert			Generate：生成getter/setter/Constructor
+
+	ctrl + alt + s 			settings快捷键
+
+*	ctrl + alt + [ 或者 ]	下一个/上一个项目
+** 	ctrl + shift + a 		搜索行动
+
+*	ctrl + e 				最近使用的文件
+	ctrl + shift + e 		最近修改的文件
+	ctrl + shift + backspace	最近修改位置
+	ctrl + alt + <-			上一个浏览地方跳转
+*	ctrl + G 				跳转到相应行
+
+	F11						打书签
+*	ctrl + F11  			带样式书签    打完书签之后 ctrl + 1 或者 ctrl + 相应数字就可以跳转到相应行
+*	alt + shift + f 		单独收藏
+
+**	alt + 1			编辑区 -> 文件区跳转
+**	esc				文件区 -> 编辑区
+
+ctrl + shift + A 然后输入 split 		分屏
+
+自定义：
+	ctrl + ,				创建Java类  
+	ctrl + 2 				Git -> commit
