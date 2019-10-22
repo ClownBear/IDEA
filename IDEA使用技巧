@@ -1,0 +1,13 @@
+高效定位代码
+	无处不在的跳转
+		1.项目之间的跳转	 	ctrl + alt + [ 或 ctrl + alt + ]
+		2.文件之间跳转		ctrl + e 或者 ctrl + shift + e
+		3.浏览修改位置跳转 	ctrl + shift + backspace
+			上一个浏览地方跳转 		ctrl + alt + <- 
+		4.利用书签跳转  		F11 打书签
+			*	ctrl + F11  			带样式书签    打完书签之后 ctrl + 1 或者 ctrl + 相应数字就可以跳转到相应行
+		5.收藏位置和文件 		alt + shift + f
+		6.字符跳转插件 		emacsIdea置跳转  ctrl + j 之后 按下要到的首字母
+		7.编辑区和文件区来回跳转 		alt + 1			编辑区 -> 文件区跳转
+									esc				文件区 -> 编辑区
+
