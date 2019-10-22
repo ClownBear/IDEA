@@ -1,0 +1,99 @@
+1.参考：https://blog.csdn.net/tuntun1120/article/details/53332948
+	字体 settings->appearance->Theme:Darcula  fort:微软雅黑light size:12
+	settings->Editor->Fort->font:Consolas size:14 line spacing:1.0
+	settings->Editor->Color scheme->scheme->export SublimeMonokai
+	settings->Editor->Color scheme->Color Scheme Fort->fort:Droid Sans Mono Size:14 Line spacing:1.1
+2.其他配置直接百度，碰到再装
+3.参考：https://zhuanlan.zhihu.com/p/69755593
+	各种插件安装
+	1.换背景图：Help->Find action->set backgroung image  透明度调到15左右
+	插件安装步骤：File->settings->Plugins->搜索名称
+
+	2.插件 Maven Helper 
+		打开pom时，可以打开pom的Dependency Analyzer视图查看安装的依赖 清晰明了
+
+	3.FindBugs-IDEA 
+		找到代码中的隐藏bug  在下方显示 和Terminal一栏
+
+	4.GsonFormat 
+		将Json转换成Object类时可自动转换
+			
+*		使用方法：
+			在新建java文件中右键->Generate ->GsonFormat 
+		或 
+			安装完成，重启IntelliJ IDEA即可，首先需要new Class文件，然后按键 ALT+Insert 选中GsonFormat，或快捷键ALT+S即可，弹出框输入json格式的字符串数据即可
+
+	5.Lombok Plugins
+ 		安装过程问题：如果安装时，显示连接超时错误，在网页上搜索Lombok plugins，IDEA官网会有一个plugin插件，点击get，找到相应IDEA的版本的Lombok，下载，然后回到IDEA中，选择install plugins from disk(从磁盘中安装插件)即可
+
+		Java Bean中的getter setter toString equals hascode等方法自动生成后再添加新属性时不需手动修改，
+		lombok会自动添加 
+*		只需在JavaBean上添加一行注解代码 @Data
+		还需在Maven中引入一个lombok的包
+			依赖：
+				<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+				<dependency>
+				    <groupId>org.projectlombok</groupId>
+				    <artifactId>lombok</artifactId>
+				    <version>1.18.8</version>
+				    <scope>provided</scope>
+				</dependency>
+		其中scope：provided标志着jar包是运行在编译时期，当程序编译成了class源代码之后，这个jar包不会在源代码层面体现
+
+	6.String Manipulation
+		字符串日常开发中经常用到
+		使用方法：
+*			安装好插件后，选中需要处理的内容后，按快捷键alt+m，即可弹出功能列表
+
+	7.Free Mybatis plugins
+		方便在mapper接口方法和mapper XML文件之间来回切换的插件
+
+	8.Key Promoter X
+		可以进行快捷键提示的插件
+		如果鼠标操作是可以用快捷键代替的话，那么Key Promoter X会弹出一个提示框
+
+	9.activate-power-mode(不推荐)
+		敲代码时会有特效
+
+	10..ignore
+		git 提交时过滤掉不必要的文件
+
+	11.CamelCase
+		将不是驼峰命名的名称，快速转换成驼峰命名。
+		使用方法：
+*			选中要修改的名称，shift+alt+u
+
+	12.CodeGlance
+		在编辑区的右侧显示代码地图
+
+	13.Material Theme UI
+		主题插件，可以让idea图标变漂亮，配色搭配很到位
+		修改配色：Tools->Material Theme修改配色
+
+	14.Backgroung image Plus
+	 	设置idea背景图片的插件，不但可以设置固定的图片，还可以设置一段时间后随机变化北京图片，以及设置图片的透明度等。
+
+	 15.Rainbow Brackets
+	 	彩虹颜色的括号
+
+配置注释模板
+	类模板
+		File->settings->File and Code Templates -> File Header -> 编辑
+				例：/**
+					  *
+					  * @ Author : 
+					  * @ Date : Created in ${TIME} ${DATE}
+					  */
+	类模板使用：创建一个类直接就带着
+
+	方法模板
+		File->settings->Live Templates -> 点击右上边 + -> 选择2.template group，然后输入groupname，随便就好，然后ok->选中刚才创建的group->再次单击右侧 + -> 选择1.Live Template->取名(即Abbreviation)为 * -> 描述就填 方法注释 就行 -> template text: 例如：
+				*
+				 * @ methodName : $methodName$
+				 * @ Date : $date$ $time$
+				 * @ param : $params$
+				 * @ return : $returns$ 
+				 */ 
+		->然后点击右侧 Edit variables -> 选择对应的就行->都编辑完之后，点击Apply -> 点击ok
+
+	方法模板使用：在你的方法上输入 /* 然后加上模板的名称，上面取的为 * ，所以直接输入/**之后按tab键就出现想要的注释了
