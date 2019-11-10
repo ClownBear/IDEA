@@ -11,3 +11,65 @@
 		7.编辑区和文件区来回跳转 		alt + 1			编辑区 -> 文件区跳转
 									esc				文件区 -> 编辑区
 
+精准搜索
+	ctrl + n 			搜索类
+	ctrl + shift + n 	搜索文件
+
+live templates
+	有些默认的如 psfi(默认自带，在plain中可以找到) 可以找到然后修改
+		Abbreviation psfi  Description:public static final int
+			Template text :
+				public static final int $val1$ = $val2$;
+				$END$;
+
+postfix
+	100.fori
+	for(int i = 0; i < 100; i++) {}
+
+	fori  nn return field sout
+
+alt + enter
+	自动创建函数
+	list replace
+	字符串format或者build
+	实现接口
+	单词拼写
+	导包
+
+重构
+	重构变量  shift + f6   ctrl + f6
+
+抽取
+	Refactor -> extract -> 
+	crtl + alt + v 		变量
+	ctrl + alt + c 		抽取静态变量
+	ctrl + alt + p		抽取方法参数
+	ctrl + alt + m		抽取函数
+
+寻找修改轨迹
+	git的集成
+		annotate  	git或其他版本控制工具 提交代码的作者
+		ctrl + shift + alt + 向上箭头 		移动所有改动之处
+		alt + ctrl + z 		撤销，包括单个和项目改动之处
+
+	local history
+		idea本地的版本控制
+		ctrl + shift + a 搜索local history
+
+关联一切
+	spring的关联
+		file -> Project Structure(ctrl + alt + shift + s) -> Facets -> 点击创建 Spring -> 点击右侧下方加号，都选中
+	数据库关联
+
+调试
+	ctrl + F8 			设置断点
+	alt + shift + F9 	单步调试
+	F9 					resume(调到下一个断点)
+	shift + ctrl + F8 	查看所有断点
+	F8 					step over
+	f7 					step into
+	禁止所有断点
+	条件断点			(当达到一定条件才执行断点)
+
+结构图
+	ctrl + alt + shift + u
