@@ -2,7 +2,7 @@
 	ctrl + shift + / 		多行注释/*
 
 *	Ctrl + H 				显示当前类的层次结构
-*	ctrl + n 				显示类名查找框
+**	ctrl + n 				显示类名查找框
 **	alt + 7 				查看类的所有方法
 *	shift + shift 			搜索类
 
@@ -12,6 +12,7 @@
 
 	ctrl + shift + r		搜索指定范围文件
 *	alt + up/down			向上/向下定位
+**	shift + enter			向下开辟一行并且光标移动到新行
 
 	ctrl + f 				在当前文件中查找
 *	ctrl + r				在当前文件中替换
@@ -47,6 +48,7 @@
 *	ctrl + alt + l			格式化代码
 	shift + alt + 箭头      上下行交换位置
 	alt + shift + u 		将选中的代码按驼峰命名  需安装插件
+**	ctrl + shift + u 		大小写转换
 
 *	alt + insert			Generate：生成getter/setter/Constructor
 
@@ -67,9 +69,31 @@
 
 **	alt + 1			编辑区 -> 文件区跳转
 **	esc				文件区 -> 编辑区
+	
+重构	
+	shift + f6
+	ctrl + f6
+
+	crtl + alt + v 		抽取变量
+	ctrl + alt + c 		抽取静态变量
+	ctrl + alt + p		抽取方法参数
+	ctrl + alt + m		抽取函数
+
+	ctrl + F8 			设置断点
+	alt + shift + F9 	单步调试
+	F9 					resume(调到下一个断点)
+	shift + ctrl + F8 	查看所有断点
+	F8 					step over
+	f7 					step into
+	禁止所有断点
+	条件断点			(当达到一定条件才执行断点)
+
+	ctrl + alt + shift + u 	查看结构图
 
 ctrl + shift + A 然后输入 split 		分屏
 
+
 自定义：
-	ctrl + ,				创建Java类  
+	ctrl + 1				创建Java类  
 	ctrl + 2 				Git -> commit
+	ctrl + 3				Annotate(git提交的作者)
